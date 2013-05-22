@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="strInputAccHint">输入手机号</string>
+    <string name="strAccInputLabel">帐号</string>
+    <string name="strPswInputLabel">密码</string>
+    <string name="opt_remember">&#160;&#160;默认账户</string>
+    <string name="login">登 录</string>
+    <string name="reg">快速注册</string>
+    <string name="loginError1">请正确填写用户名密码</string>
+    <string name="loginError2">该用户已存在，请登录</string>
+    <string name="loginError2_1">密码错误，请重新输入</string>
+    <string name="loginError3">密码不能小于6位</string>
+    <string name="loginError4">当前无网络连接，请查看</string>
+    <string name="loginError5">请填写正确的手机号</string>
+    <string name="loginErrorDon1">取消</string>
+    <string name="loginErrorDon2">查看</string>
+    <string name="loginReging">正在注册中</string>
+    <string name="loginLoginIng">正在登录中</string>
+    <string name="ctrlUserModule1">请选择启动模式：可在设置中修改启动模式</string>
+    <string name="ctrlUserModule2">司机模式</string>
+    <string name="ctrlUserModule3">乘客模式</string>
+    <string name="passengMain">我要打车--乘客版</string>
+    <string name="passengItem0">随机打车</string>
+    <string name="passengItem1">预约打车</string>
+    <string name="passengItem2">预约代驾</string>
+    <string name="passengItem3">常用路线</string>
+    <string name="passengItem4">订单查询</string>
+    <string name="passengItem5">软件设置</string>
+    <string name="gpsErrorTitle1">提高"我的位置"的精准度</string>
+    <string name="gpsErrorMessage1">若使用该服务需要精确的位置服务，若不开启则需要手动报告您的所在位置</string>
+    <string name="gpsErrorSet1">设置</string>
+    <string name="gpsErrorSet2">手动设置位置</string>
+    <string name="suijiStart1">您的随机请求已发送</string>
+    <string name="suijiError1">您已有一个随机请求，是否需要取消当前请求并重新提出打车</string>
+    <string name="suijiError2">重新发送请求</string>
+    <string name="pageLoding">载入中。。。</string>
+    <string name="ofenRouteError">添加新的路线</string>
+    <string name="ofenRouteError2">添加新预约</string>
+    <string name="route_name_group1">路线</string>
+    <string name="route_name_group2">新增路线</string>
+    <string name="service_group1">预约日期</string>
+    <string name="service_group2">预约时间</string>
+    <string name="pop_save_builder1">默认预约今天</string>
+    <string name="pop_save_builder2">日期</string>
+    <string name="pop_save_builder3">时间</string>
+    <string name="often_route1">您是否删除该路线？</string>
+    <string name="often_route3">常用路线</string>
+    <string name="often_route2">订单查看</string>
+    <string name="often_route4">添加新路线</string>
+    <string name="driver_item1">预约订单</string>
+    <string name="driver_item2">已接订单</string>
+    <string name="driver_item3">修改信息</string>
+    <string name="driver_item4">软件设置</string>
+    <string name="driver_reg1">必填项</string>
+    <string name="driver_reg2">您的姓名</string>
+    <string name="driver_reg3">所在公司</string>
+    <string name="driver_reg4">车牌号</string>
+    <string name="driver_reg5">您的工号</string>
+    <string name="driver_reg6">注册</string>
+
+</resources>

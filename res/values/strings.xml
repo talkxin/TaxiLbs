@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- 应用名 -->
+    <string name="app_name">我要打车</string>
+    <!-- 数据库默认名 -->
+    <string name="database_name">taxilbs_client</string>
+    <!-- 百度地图Key -->
+    <string name="baiduMapKey">8E537B2F6FAEC7816A089DC191E9397424A893E3</string>
+    <!-- 服务器地址 -->
+    <string name="serverPath">http://124.238.214.194/TaxiLbs/</string>
+    <!-- 快速注册 -->
+    <string name="regAndLogin">regAndLogin.do</string>
+    <!-- 登录 -->
+    <string name="loginInClient">loginInClient.do</string>
+    <!-- 验证唯一 -->
+    <string name="isNewUserForClient">isNewUserForClient.do</string>
+    <!-- 注册司机 -->
+    <string name="regDriver">regDriver.do</string>
+    <!-- 返回司机信息 -->
+    <string name="getDriverInfo">getDriverInfo.do</string>
+    <!-- 更新司机信息 -->
+    <string name="updateDriverInfo">getDriverInfo.do</string>
+    <!-- 添加订单 -->
+    <string name="regService">regService.do</string>
+    <!-- 获取历史订单 -->
+    <string name="getServiceListForUser">getServiceListForUser.do</string>
+    <!-- 获取随机打车订单 -->
+    <string name="getRandomServiceList">getRandomServiceList.do</string>
+    <!-- 获取订车的订单 -->
+    <string name="getAppointmentService">getAppointmentService.do</string>
+    <!-- 司机取消订单 -->
+    <string name="cancelService">cancelService.do</string>
+    <!-- 用户删除订单 -->
+    <string name="removeService">removeService.do</string>
+    <!-- 接单 -->
+    <string name="chexInService">chexInService.do</string>
+    <!-- 完成订单 -->
+    <string name="overService">overService.do</string>
+    <!-- 更新司机坐标 -->
+    <string name="updateDriverCoordinate">updateDriverCoordinate.do</string>
+    <!-- 搜索休眠时间 -->
+    <string name="driverSleep">300000</string>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="账户" >
+        <Preference
+            android:key="setModuleChange"
+            android:summary="在司机模式与用户模式中切换"
+            android:title="模式切换" />
+        <Preference
+            android:key="setUserChange"
+            android:summary="在不同的用户之间切换"
+            android:title="用户切换" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="安全" >
+        <Preference
+            android:key="safeUserMail"
+            android:summary="验证邮箱确保密码找回"
+            android:title="验证邮箱" />
+        <Preference
+            android:key="safeUserMobile"
+            android:summary="发送短信验证手机号"
+            android:title="验证手机号" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="支付" >
+        <Preference
+            android:key="setAlipay"
+            android:title="绑定淘宝支付" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="帮助" >
+        <PreferenceScreen
+            android:summary="反馈建议"
+            android:title="反馈建议" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

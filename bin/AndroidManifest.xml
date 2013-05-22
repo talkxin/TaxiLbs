@@ -1,0 +1,129 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taxiCliect.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 使用sdk baidumap要求 -->
+    <uses-sdk android:minSdkVersion="3" >
+    </uses-sdk>
+    <!--
+    允许接收开机启动广播
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    -->
+    <!-- 访问GSM权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 获取精准位置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 获取访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <!-- 获取写入权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 获取使用wifi的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 改变wifi状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取访问电话状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 申请权限：蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <application
+        android:name="com.taxiCliect.activity.AppMain"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+
+        <!-- 欢迎页面 -->
+        <activity
+            android:name="com.taxiCliect.activity.SplashActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DianpingNoTitle.CustomerBackground" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登录页面 -->
+        <activity
+            android:name="com.taxiCliect.activity.LoginActivity"
+            android:configChanges="orientation" >
+        </activity>
+        <!-- 乘客主菜单 -->
+        <activity
+            android:name="com.taxiCliect.activity.PassengerMainActivity"
+            android:configChanges="orientation" >
+        </activity>
+        <!-- 司机主菜单 -->
+        <activity
+            android:name="com.taxiCliect.activity.DriverMainActivity"
+            android:configChanges="orientation" >
+        </activity>
+        <!-- 预约打车Activity -->
+        <activity
+            android:name="com.taxiCliect.activity.person.OftenRoute"
+            android:configChanges="orientation" >
+        </activity>
+        <!-- 地图main -->
+        <activity
+            android:name="com.taxiCliect.activity.map.MapMain"
+            android:configChanges="orientation" >
+        </activity>
+        <!-- 帮助与设置 -->
+        <activity
+            android:name="com.taxiCliect.activity.setup.SetupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Default.NoTitleBar" >
+        </activity>
+        <!-- 司机预约菜单 -->
+        <activity
+            android:name="com.taxiCliect.activity.driver.DriverAppointmentActivity"
+            android:configChanges="orientation" >
+        </activity>
+        <!-- 注册自动连接 -->
+        <receiver android:name="com.taxiCliect.util.blueTooth.BluetoothConnectActivityReceiver" >
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.PAIRING_CANCEL" />
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST" />
+            </intent-filter>
+        </receiver>
+        <!--
+        注册开机启动
+        <receiver android:name="com.taxiCliect.service.broadcastReceiver.BootBroadCastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- 注册服务 -->
+        <service
+            android:name="com.taxiCliect.service.Bootservice"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.taxiCliect.service.Bootservice" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

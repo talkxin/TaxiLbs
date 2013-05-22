@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="horizontal"
+    android:paddingBottom="20dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="5dip" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/driverName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:hint="@string/driver_reg2"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <EditText
+            android:id="@+id/driverCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/driverName"
+            android:layout_alignRight="@+id/driverName"
+            android:layout_below="@+id/driverName"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:hint="@string/driver_reg3"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <EditText
+            android:id="@+id/plateNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/driverCompany"
+            android:layout_alignRight="@+id/driverCompany"
+            android:layout_below="@+id/driverCompany"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:hint="@string/driver_reg4"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <EditText
+            android:id="@+id/companyNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/plateNumber"
+            android:layout_alignRight="@+id/plateNumber"
+            android:layout_below="@+id/plateNumber"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:hint="@string/driver_reg5"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <Button
+            android:id="@+id/regdriver_save"
+            android:layout_width="130.0px"
+            android:layout_height="50.0px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/companyNo"
+            android:layout_marginRight="120.0dip"
+            android:layout_marginTop="7.0px"
+            android:text="@string/driver_reg6" />
+    </RelativeLayout>
+
+</LinearLayout>

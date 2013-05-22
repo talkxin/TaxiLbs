@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <ProgressBar
+        android:id="@+id/often_route_progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="10dip"
+        android:layout_height="10dip" />
+
+    <TextView
+        android:id="@+id/listfooter_loding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pageLoding"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:id="@+id/lodingDataNull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ofenRouteError"
+        android:textColor="#ff000000"
+        android:visibility="gone" />
+
+</LinearLayout>

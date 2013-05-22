@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/com.taxiCliect.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#767c9b" >
+
+    <com.baidu.mapapi.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" >
+    </com.baidu.mapapi.MapView>
+
+    <RelativeLayout
+        android:id="@+id/valuation_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/go_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:hint="@string/pop_save_builder1"
+            android:inputType="none"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:text="00:00" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/go_time"
+            android:layout_alignLeft="@+id/go_time"
+            android:layout_alignTop="@+id/go_time"
+            android:layout_marginRight="15.0sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="时间"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/go_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/go_time"
+            android:layout_alignRight="@+id/go_time"
+            android:layout_below="@+id/go_time"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:inputType="none"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:text="0.0公里" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/go_km"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignTop="@+id/go_km"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="公里"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/go_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/go_km"
+            android:layout_alignRight="@+id/go_km"
+            android:layout_below="@+id/go_km"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:inputType="none"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:text="0.0元" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/go_money"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignTop="@+id/go_money"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="金额"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <Button
+            android:id="@+id/go_save"
+            android:layout_width="130.0px"
+            android:layout_height="50.0px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/go_money"
+            android:layout_marginRight="120.0dip"
+            android:layout_marginTop="7.0px"
+            android:text="乘客下车" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/automatic_route"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/taketaxipic" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/automatic_route1"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/taketaxipic_down"
+        android:visibility="gone" >
+    </ImageButton>
+
+    <com.taxiCliect.activity.driver.Panel
+        android:id="@+id/leftPanel1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        panel:closedHandle="@drawable/left_switcher_collapsed_background"
+        panel:openedHandle="@drawable/left_switcher_expanded_background"
+        panel:position="left" >
+
+        <Button
+            android:id="@id/panelHandle"
+            android:layout_width="33dip"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@id/panelContent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/my_grid"
+                android:layout_width="125dip"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff" />
+        </LinearLayout>
+    </com.taxiCliect.activity.driver.Panel>
+
+</RelativeLayout>

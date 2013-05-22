@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingBottom="52.0dip"
+    android:src="@drawable/logo" />

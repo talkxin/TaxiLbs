@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="horizontal"
+    android:paddingBottom="20dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="5dip" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/route_name_builder_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/route_name_builder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:hint="@string/route_name_group2"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/route_name_builder"
+            android:layout_alignLeft="@+id/route_name_builder"
+            android:layout_alignTop="@+id/route_name_builder"
+            android:layout_marginRight="15.0sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/route_name_group1"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/servcie_builder_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!--
+        <RelativeLayout
+            android:id="@+id/pop_save_service_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/service_date_builder"
+                android:text="@string/service_group1" />
+
+            <EditText
+                android:id="@+id/service_date_builder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0px"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:paddingLeft="45.0sp"
+                android:saveEnabled="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pop_save_service_top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/service_time_builder"
+                android:text="@string/service_riqi_default" />
+
+            <EditText
+                android:id="@+id/service_time_builder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0px"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:paddingLeft="45.0sp"
+                android:saveEnabled="true" />
+        </RelativeLayout>
+        -->
+
+        <EditText
+            android:id="@+id/service_date_builder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:hint="@string/pop_save_builder1"
+            android:inputType="datetime"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/service_date_builder"
+            android:layout_alignLeft="@+id/service_date_builder"
+            android:layout_alignTop="@+id/service_date_builder"
+            android:layout_marginRight="15.0sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/pop_save_builder2"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/service_time_builder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/service_date_builder"
+            android:layout_alignRight="@+id/service_date_builder"
+            android:layout_below="@+id/service_date_builder"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:inputType="datetime"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/service_time_builder"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignTop="@+id/service_time_builder"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="@string/pop_save_builder3"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+
+</LinearLayout>

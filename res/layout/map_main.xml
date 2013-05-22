@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.baidu.mapapi.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" >
+    </com.baidu.mapapi.MapView>
+
+    <RelativeLayout
+        android:id="@+id/seach_top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bmapView"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/icon_start_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_nav_start_h" />
+
+        <EditText
+            android:id="@+id/start_text"
+            android:layout_width="192dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/icon_start_view"
+            android:hint="我的位置"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <ImageButton
+            android:id="@+id/seach_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/start_text"
+            android:background="@drawable/btn_poi_search" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seach_top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seach_top1"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/icon_end_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_nav_end_h" />
+
+        <EditText
+            android:id="@+id/end_text"
+            android:layout_width="192dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_toRightOf="@id/icon_end_view"
+            android:hint="请输入位置"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true" />
+
+        <ImageButton
+            android:id="@+id/seach_end_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/end_text"
+            android:background="@drawable/btn_poi_search" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/valuation_module"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/go_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5.0px"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:hint="@string/pop_save_builder1"
+            android:inputType="none"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:text="00:00" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/go_time"
+            android:layout_alignLeft="@+id/go_time"
+            android:layout_alignTop="@+id/go_time"
+            android:layout_marginRight="15.0sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="时间"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/go_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/go_time"
+            android:layout_alignRight="@+id/go_time"
+            android:layout_below="@+id/go_time"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:inputType="none"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:text="0.0公里" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/go_km"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignTop="@+id/go_km"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="公里"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/go_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/go_km"
+            android:layout_alignRight="@+id/go_km"
+            android:layout_below="@+id/go_km"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/qq_edit_login"
+            android:inputType="none"
+            android:maxLength="16"
+            android:paddingLeft="45.0sp"
+            android:saveEnabled="true"
+            android:text="0.0元" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/go_money"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_alignTop="@+id/go_money"
+            android:gravity="center_vertical"
+            android:paddingLeft="7.0sp"
+            android:text="金额"
+            android:textColor="#ff3f3f3f"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/save_route"
+        android:layout_width="64.0dip"
+        android:layout_height="64.0dip"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/taketaxipic" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/my_location"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_alignLeft="@id/bmapView"
+        android:background="@drawable/positionpic" >
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="70.0dip"
+        android:layout_height="44.66666dip"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_alignLeft="@id/bmapView" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image7"
+        android:layout_width="45.333317dip"
+        android:layout_height="68.666664dip"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_alignLeft="@id/bmapView" >
+    </ImageView>
+
+    <ImageButton
+        android:id="@+id/my_start"
+        android:layout_width="70.0dip"
+        android:layout_height="52.0dip"
+        android:layout_above="@id/image6"
+        android:layout_alignLeft="@id/bmapView"
+        android:background="@drawable/bigpic" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/my_end"
+        android:layout_width="52.0dip"
+        android:layout_height="68.0dip"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_toRightOf="@id/image7"
+        android:background="@drawable/smallpic" >
+    </ImageButton>
+
+</RelativeLayout>

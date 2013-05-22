@@ -1,0 +1,256 @@
+<database>
+
+    <table name="t_client_FileInteractive" >
+        <property
+            name="id"
+            type="INTEGER PRIMARY KEY" />
+        <property
+            name="route"
+            type="varchar(50)" />
+        <property
+            name="name"
+            type="varchar(50)" />
+        <property
+            name="newName"
+            type="varchar(50)" />
+        <property
+            name="outputSize"
+            type="varchar(50)" />
+        <property
+            name="inputSize"
+            type="varchar(50)" />
+        <property
+            name="isGo"
+            type="int(1)" />
+    </table>
+    <table name="t_client_taxiUser" >
+        <property
+            name="uid"
+            type="bigint(19) PRIMARY KEY" />
+        <property
+            name="userName"
+            type="varchar(50)" />
+        <property
+            name="loginName"
+            type="varchar(50)" />
+        <property
+            name="password"
+            type="varchar(50)" />
+        <property
+            name="phoneNumber"
+            type="varchar(50)" />
+        <property
+            name="email"
+            type="varchar(50)" />
+        <property
+            name="isLogin"
+            type="varchar(50)" />
+        <property
+            name="loginUser"
+            type="int(1)" />
+    </table>
+    <table name="t_client_DriverInfo" >
+        <property
+            name="id"
+            type="INTEGER PRIMARY KEY" />
+        <property
+            name="uid"
+            type="bigint(19)" />
+        <property
+            name="driverName"
+            type="varchar(20)" />
+        <property
+            name="driverCompany"
+            type="varchar(100)" />
+        <property
+            name="companyPhone"
+            type="varchar(100)" />
+        <property
+            name="driverCity"
+            type="varchar(100)" />
+        <property
+            name="plateNumber"
+            type="varchar(50)" />
+        <property
+            name="companyNo"
+            type="varchar(50)" />
+        <property
+            name="taobaoLoginName"
+            type="varchar(100)" />
+        <property
+            name="isTrue"
+            type="int(1)" />
+    </table>
+    <table name="t_client_taxiService" >
+        <property
+            name="serviceId"
+            type="bigint(19) primary key" />
+        <property
+            name="did"
+            type="bigint(19)" />
+        <property
+            name="userName"
+            type="varchar(20)" />
+        <property
+            name="userNambr"
+            type="varchar(15)" />
+        <property
+            name="uid"
+            type="bigint(19)" />
+        <property
+            name="city"
+            type="varchar(50)" />
+        <property
+            name="startAddLon"
+            type="double(20,6)" />
+        <property
+            name="startAddLat"
+            type="double(20,6)" />
+        <property
+            name="endAdd"
+            type="varchar(50)" />
+        <property
+            name="startTime"
+            type="varchar(20)" />
+        <property
+            name="upTime"
+            type="varchar(20)" />
+        <property
+            name="endTime"
+            type="varchar(20)" />
+        <property
+            name="appointmentTime"
+            type="varchar(20)" />
+        <property
+            name="appointmentAdd"
+            type="varchar(20)" />
+        <property
+            name="appointmentEnd"
+            type="varchar(20)" />
+        <property
+            name="appointmentEndTime"
+            type="varchar(20)" />
+        <property
+            name="newEndAdd"
+            type="varchar(20)" />
+        <property
+            name="newEndTime"
+            type="varchar(20)" />
+        <property
+            name="kmNumber"
+            type="double(19,3)" />
+        <property
+            name="payNumber"
+            type="double(19,3)" />
+        <property
+            name="serviceType"
+            type="int(1)" />
+        <property
+            name="serviceEnd"
+            type="int(1)" />
+        <property
+            name="serviceUserType"
+            type="int(1)" />
+        <property
+            name="bluetoothMac"
+            type="varchar(20)" />
+        <property
+            name="orderAddTime"
+            type="varchar(20)" />
+    </table>
+    <table name="t_client_taxiRoute" >
+        <property
+            name="id"
+            type="INTEGER PRIMARY KEY" />
+        <property
+            name="uid"
+            type="bigint(19)" />
+        <property
+            name="name"
+            type="varchar(20)" />
+        <property
+            name="city"
+            type="varchar(20)" />
+        <property
+            name="startAdd"
+            type="varchar(20)" />
+        <property
+            name="startStr"
+            type="varchar(100)" />
+        <property
+            name="endAdd"
+            type="varchar(20)" />
+        <property
+            name="endStr"
+            type="varchar(100)" />
+        <property
+            name="routeKm"
+            type="varchar(20)" />
+        <property
+            name="remarks"
+            type="varchar(100)" />
+        <property
+            name="uses"
+            type="int(4)" />
+    </table>
+    <table name="t_client_ctrlSoft" >
+        <property
+            name="uid"
+            type="bigint(19)" />
+        <property
+            name="userModule"
+            type="int(1) default &apos;3&apos;" />
+        <property
+            name="music"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="vibration"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="speech"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="offLine"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="layoutModule"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_driver"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_passenger_main"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_passenger_dache"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_passenger_yuyue"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_passenger_daijia"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_passenger_changyongluxian"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_passenger_dingdanchaxun"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_passenger_jijiamoshi"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_driver_main"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_driver_yuyue"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_driver_dingdanchaxun"
+            type="int(1) default &apos;0&apos;" />
+        <property
+            name="help_driver_jijiamoshi"
+            type="int(1) default &apos;0&apos;" />
+    </table>
+
+</database>
